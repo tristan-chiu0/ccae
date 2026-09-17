@@ -216,15 +216,39 @@ author: githubID
 
 ```html
 %%html
+<style>
+    .large-title {
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 1.6;
+        font-family: 'Helvetica', sans-serif;
+    }
+    .sub-title {
+        font-size: 24px;
+        line-height: 1.6;
+        font-weight: bold;
+        font-family: 'Helvetica', sans-serif;
+    }
+    .body-text {
+        font-size: 16px;
+        line-height: 1.6;
+        font-family: 'Helvetica', sans-serif;
+    }
+    .bold {
+        font-weight: bold;
+        line-height: 1.6;
+    }
+</style>
+
 
 <!-- UI_RUNNER: Typography Popcorn Base--> 
-
-<div class="huge-text">Welcome!</div>
+<div class="large-title">Welcome!</div>
 <span class="sub-title">Read this</span>
-<div class="normal">This is a sentence.</div>
+<div class="body-text">This is a sentence.</div>
+<div class="bold">This is bolded text.</div>
 ```
 
-**Expected direction:** one heading, one supporting heading/subheading, and one paragraph.
+**Expected direction:** one heading, one supporting heading/subheading, one paragraph, and one bolded sentence, without anything extra.
 
 ### Homework Hack
 
@@ -234,9 +258,9 @@ author: githubID
 %%html
 
 <!-- UI_RUNNER: Typography Homework Base --> 
-<p class="title-font">Project Features</p>
-<p class="section-font">User Accounts</p>
-<p class="body-text">Users can make an account and log in. This is a <span class="very-important">crucial</span> feature.</p>
+<p class="large-title">Project Features</p>
+<p class="sub-title">User Accounts</p>
+<p class="body-text">Users can make an account and log in. This is a <span class="bold">crucial</span> feature.</p>
 <p class="body-text">Steps to register:</p>
 <p class="list-item">1. Click register</p>
 <p class="list-item">2. Enter email</p>
